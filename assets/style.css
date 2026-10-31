@@ -210,3 +210,21 @@ th { background: var(--paper-2); }
   .site-header, .site-footer, .preview-bar, .skip, .cta, .signup { display: none !important; }
   body { background: #fff; }
 }
+
+/* Seasonal: Christmas (enabled by "seasonal": "christmas" in data/site.json) */
+.xmas{--red:#C8352B;--teal:#1E7A52}
+.xmas-bar{background:#1E7A52;text-align:center;padding:9px 16px;font-weight:700;font-size:15px}
+.xmas-bar a{color:#fff;text-decoration:none}
+.xmas-bar a:hover,.xmas-bar a:focus{text-decoration:underline}
+.xmas .site-header{border-bottom-color:#C8352B;border-bottom-width:4px;border-bottom-style:double}
+.xmas .eyebrow{color:#C8352B}
+.xmas .btn{background:#C8352B;border-color:#1F1A33}
+.xmas .btn-secondary{background:#fff;color:#1F1A33}
+.xmas .site-footer{border-top:4px double #1E7A52}
+.xmas-greet{font-weight:700;color:#FFC83D}
+.xmas::before{content:"";position:fixed;inset:-100% 0 0 0;z-index:40;pointer-events:none;opacity:.8;
+background-image:radial-gradient(3px 3px at 20px 30px,#9DB8E8,transparent),radial-gradient(2px 2px at 90px 80px,#9DB8E8,transparent),radial-gradient(3px 3px at 160px 20px,#9DB8E8,transparent),radial-gradient(2px 2px at 230px 120px,#9DB8E8,transparent),radial-gradient(3px 3px at 300px 60px,#9DB8E8,transparent);
+background-size:320px 200px;animation:xsnow 16s linear infinite}
+@keyframes xsnow{to{transform:translateY(100%)}}
+@media (prefers-reduced-motion:reduce){.xmas::before{display:none}}
+@media print{.xmas::before,.xmas-bar{display:none!important}}
