@@ -234,3 +234,6 @@ background-size:320px 200px;animation:xsnow 16s linear infinite}
 .btn-pin { background: #E60023; border-color: #E60023; color: #fff; display: inline-flex; align-items: center; gap: .5rem; font-size: .95rem; }
 .btn-pin:hover { background: #ad081b; border-color: #ad081b; color: #fff; }
 @media print { .save-row { display: none; } }
+
+.footer-affiliate { margin-top: .4rem; }
+.footer-affiliate a { color: inherit; text-decoration: underline; }
